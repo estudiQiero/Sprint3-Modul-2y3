@@ -1,0 +1,53 @@
+.botonCalcu {
+    width: 23%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background: #eee;
+    margin: 3px 1%;
+    border-radius: 8px;
+    color: #686868;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botonCalcu:hover {
+    background:rgb(213, 213, 213);
+}
+
+.carcasa {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.pantallaLCD {
+    height: 60px;
+    background-color: rgb(223, 230, 206);
+}
+
+#LCD {
+    display: flex;
+    align-items: center;
+}
+
+#LCD .p {
+    text-align: right;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #68735a;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h2 {
+    color: #cecece;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
