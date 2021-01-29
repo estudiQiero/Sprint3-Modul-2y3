@@ -24,6 +24,12 @@
   color: #849a4e;
   font-weight: 600;
   font-size: 2em;
+  text-align: right;
+  border: 0;
+  text-shadow: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  margin: 0;
 }
 
 .carcasa h2 {
@@ -54,10 +60,6 @@
   overflow: hidden;
 }
 
-.carcasa .pantallaLCD #LCD p {
-  text-align: right;
-}
-
 .carcasa .firma {
   margin-top: 1rem;
   text-align: right;
@@ -84,11 +86,12 @@
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
-  border: 2px solid #268926;
-  text-shadow: 0 -1px 0 #217521;
-  -webkit-box-shadow: inset 0 1px 0 #5dd25d;
-          box-shadow: inset 0 1px 0 #5dd25d;
+  border: 0 solid #268926;
+  -webkit-box-shadow: inset 1px 2px 3px #5dd25d, inset -1px -2px 3px #164d16, 2px 2px 3px 1px #cc7000;
+          box-shadow: inset 1px 2px 3px #5dd25d, inset -1px -2px 3px #164d16, 2px 2px 3px 1px #cc7000;
   color: #d5f3d5;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
 }
 
 .carcasa .botonCalcu:hover {
@@ -96,18 +99,22 @@
 }
 
 .carcasa .botonCalcu:active {
-  background: #217521;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .carcasa .botonOp {
   background-color: #4e9bd5;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  border: 2px solid #398fd0;
-  text-shadow: 0 -1px 0 #2e82c2;
-  -webkit-box-shadow: inset 0 1px 0 #a0cae9;
-          box-shadow: inset 0 1px 0 #a0cae9;
+  border: 0 solid #398fd0;
+  -webkit-box-shadow: inset 1px 2px 3px #a0cae9, inset -1px -2px 3px #246799, 2px 2px 3px 1px #cc7000;
+          box-shadow: inset 1px 2px 3px #a0cae9, inset -1px -2px 3px #246799, 2px 2px 3px 1px #cc7000;
   color: white;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
 }
 
 .carcasa .botonOp:hover {
@@ -115,18 +122,22 @@
 }
 
 .carcasa .botonOp:active {
-  background: #2e82c2;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .carcasa .botonRojo {
   background-color: #d54e4e;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  border: 2px solid #d03939;
-  text-shadow: 0 -1px 0 #c22e2e;
-  -webkit-box-shadow: inset 0 1px 0 #e9a0a0;
-          box-shadow: inset 0 1px 0 #e9a0a0;
+  border: 0 solid #d03939;
+  -webkit-box-shadow: inset 1px 2px 3px #e9a0a0, inset -1px -2px 3px #992424, 2px 2px 3px 1px #cc7000;
+          box-shadow: inset 1px 2px 3px #e9a0a0, inset -1px -2px 3px #992424, 2px 2px 3px 1px #cc7000;
   color: white;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
 }
 
 .carcasa .botonRojo:hover {
@@ -134,18 +145,22 @@
 }
 
 .carcasa .botonRojo:active {
-  background: #c22e2e;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .carcasa .botonResult {
   background-color: #f2c71a;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  border: 2px solid #e5ba0d;
-  text-shadow: 0 -1px 0 #cda70c;
-  -webkit-box-shadow: inset 0 1px 0 #f7df7b;
-          box-shadow: inset 0 1px 0 #f7df7b;
+  border: 0 solid #e5ba0d;
+  -webkit-box-shadow: inset 1px 2px 3px #f7df7b, inset -1px -2px 3px #9d8009, 2px 2px 3px 1px #cc7000;
+          box-shadow: inset 1px 2px 3px #f7df7b, inset -1px -2px 3px #9d8009, 2px 2px 3px 1px #cc7000;
   color: white;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
 }
 
 .carcasa .botonResult:hover {
@@ -153,5 +168,8 @@
 }
 
 .carcasa .botonResult:active {
-  background: #cda70c;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }

@@ -8,17 +8,21 @@ $LCD: rgb(223, 230, 206);
 
 // mixins
 @mixin boto ($colorBoto) {
-    border: 2px solid darken($colorBoto, 5%);
-    text-shadow: 0 -1px 0 darken($colorBoto, 10%);
-    box-shadow: inset 0 1px 0 lighten($colorBoto, 20%);
+    border: 0 solid darken($colorBoto, 5%);
+    box-shadow: inset 1px 2px 3px lighten($colorBoto, 20%),
+        inset -1px -2px 3px darken($colorBoto, 20%),
+        2px 2px 3px 1px darken($carcasa, 10%);
     color: lighten($colorBoto, 50%);
+    box-shadow: offset;
 
     &:hover {
         background: lighten($colorBoto, 10%);
     }
 
     &:active {
-        background: darken($colorBoto, 10%);
+        // background: darken($colorBoto, 10%);
+        box-shadow: 0 0 0 0;
+        transform: scale(.9);
     }
 }
 
@@ -45,6 +49,11 @@ $LCD: rgb(223, 230, 206);
         color: darken($LCD, 40%);
         font-weight: 600;
         font-size: 2em;
+        text-align: right;
+        border: 0;
+        text-shadow: 0;
+        box-shadow: 0;
+        margin: 0;
     }
 
     h2 {
@@ -67,10 +76,6 @@ $LCD: rgb(223, 230, 206);
             display: flex;
             align-items: center;
             overflow: hidden;
-
-            p {
-                text-align: right;
-            }
         }
     }
 
@@ -121,4 +126,3 @@ $LCD: rgb(223, 230, 206);
         @include boto($btnResult);
     }
 }
-
