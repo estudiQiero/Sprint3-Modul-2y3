@@ -5,22 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Calcu</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/estilsNivell2.css">
+		<link rel="stylesheet" href="estils.css">
 	</head>
 	<body>
-		<main class="bg-secondary carcasa mt-3 p-3">
+		<main class="carcasa mt-3 p-3">
 			<h2>CASIO</h2>
 			<div class="mb-3 ml-1 mr-1 pantallaLCD row">
 				<div id="LCD" class="align-items-center col-12 d-flex justify-content-end ml-auto mr-auto">
 					<p id="resultado">0</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-pg-collapsed>
 				<div class="col-12 container d-flex flex-wrap justify-content-around">
 					<div id="un" class="botonCalcu" onclick="teclaUno()">1</div>
 					<div id="dos" class="botonCalcu" onclick="teclaDos()">2</div>
-					<div id="tres" class="botonCalcu"
-					onclick="teclaTres()">3</div>
+					<div id="tres" class="botonCalcu" onclick="teclaTres()">3</div>
 					<!-- Tecla suma -->
 					<div id="mes" class="botonOp botonCalcu text-white" onclick="teclaMas()">&#43;</div>
 					<div id="quatre" class="botonCalcu" onclick="teclaCuatro()">4</div>
@@ -42,6 +41,7 @@
 					<div id="entre" class="botonOp botonCalcu text-white" onclick="teclaEntre()">&#247;</div>
 				</div>
 			</div>
+			<p class="firma">Desenvolupat per Miq Alarcia. 2021.</p>
 		</main>
 		<script type="application/javascript" src="js/nivell2.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

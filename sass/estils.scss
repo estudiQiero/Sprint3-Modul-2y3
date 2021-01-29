@@ -1,0 +1,124 @@
+// Colors
+$carcasa: rgb(255, 140, 0);
+$btnNums: rgb(44, 157, 44);
+$btnOp: rgb(78, 155, 213);
+$btnResult: rgb(242, 199, 26);
+$btnReset: rgb(213, 78, 78);
+$LCD: rgb(223, 230, 206);
+
+// mixins
+@mixin boto ($colorBoto) {
+    border: 2px solid darken($colorBoto, 5%);
+    text-shadow: 0 -1px 0 darken($colorBoto, 10%);
+    box-shadow: inset 0 1px 0 lighten($colorBoto, 20%);
+    color: lighten($colorBoto, 50%);
+
+    &:hover {
+        background: lighten($colorBoto, 10%);
+    }
+
+    &:active {
+        background: darken($colorBoto, 10%);
+    }
+}
+
+// reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.carcasa {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 10px;
+    background-color: $carcasa;
+    border: 2px solid darken($carcasa, 5%);
+    box-shadow: inset 0 2px 0 lighten($carcasa, 20%);
+
+    p {
+        padding: 0;
+        color: darken($LCD, 40%);
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    h2 {
+        color: darken($carcasa, 20%);
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-align: center;
+        text-shadow: 0 1px 0 lighten($carcasa, 30%);
+        margin: .5rem 0 1rem 0;
+    }
+
+    .pantallaLCD {
+        height: 60px;
+        background-color: $LCD;
+        border: 1px solid darken($LCD, 20%);
+        text-shadow: 0 -1px 0 lighten($LCD, 10%);
+        box-shadow: inset 0 0 10px darken($LCD, 20%);
+
+        #LCD {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            p {
+                text-align: right;
+            }
+        }
+    }
+
+    .firma {
+        margin-top: 1rem;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 400;
+        color: darken($carcasa, 20%);
+    }
+
+    /* Botones */
+    .botonCalcu {
+        width: 23%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        background: $btnNums;
+        margin: 3px 1%;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+
+        // transition: all .2s ease-in-out;
+        @include boto($btnNums);
+    }
+
+    .botonOp {
+        background-color: $btnOp;
+        transition: all .2s ease-in-out;
+
+        @include boto($btnOp);
+    }
+
+    .botonRojo {
+        background-color: $btnReset;
+        transition: all .2s ease-in-out;
+
+        @include boto($btnReset);
+    }
+
+    .botonResult {
+        background-color: $btnResult;
+        transition: all .2s ease-in-out;
+
+        @include boto($btnResult);
+    }
+}
+
