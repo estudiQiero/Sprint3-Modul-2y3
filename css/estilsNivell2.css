@@ -1,3 +1,40 @@
+.carcasa {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.pantallaLCD {
+    height: 60px;
+    background-color: rgb(223, 230, 206);
+}
+
+#LCD {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#LCD .p {
+    text-align: right;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #68735a;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h2 {
+    color: #cecece;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/* Botones */
 .botonCalcu {
     width: 23%;
     height: 70px;
@@ -17,37 +54,26 @@
     background:rgb(213, 213, 213);
 }
 
-.carcasa {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    border-radius: 10px;
+.botonOp {
+    background-color: rgb(78, 155, 213);
 }
 
-.pantallaLCD {
-    height: 60px;
-    background-color: rgb(223, 230, 206);
+.botonOp:hover {
+    background-color: rgb(54, 121, 172);
 }
 
-#LCD {
-    display: flex;
-    align-items: center;
+.botonRojo {
+    background-color: rgb(213, 78, 78);
 }
 
-#LCD .p {
-    text-align: right;
+.botonRojo:hover {
+    background-color: rgb(157, 47, 47);
 }
 
-p {
-    margin: 0;
-    padding: 0;
-    color: #68735a;
-    font-weight: 600;
-    font-size: 2em;
+.botonResult {
+    background-color: rgb(242, 199, 26);
 }
 
-h2 {
-    color: #cecece;
-    font-weight: 400;
-    font-size: 1.3rem;
+.botonResult:hover {
+    background-color: rgb(193, 159, 24);
 }
