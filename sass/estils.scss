@@ -109,21 +109,18 @@ $LCD: rgb(223, 230, 206);
 
     .botonOp {
         background-color: $btnOp;
-        transition: all .2s ease-in-out;
 
         @include boto($btnOp);
     }
 
     .botonRojo {
         background-color: $btnReset;
-        transition: all .2s ease-in-out;
 
         @include boto($btnReset);
     }
 
     .botonResult {
         background-color: $btnResult;
-        transition: all .2s ease-in-out;
 
         @include boto($btnResult);
     }
