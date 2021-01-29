@@ -185,18 +185,22 @@ function teclaIgual() {
         // suma
         case "valorSumaA":
             resultadoFinal = parseInt(valorSumaA) + parseInt(result);
+            valorSumaA = "0";
             break;
         // resta
         case "valorRestaA":
             resultadoFinal = valorRestaA - result;
+            valorRestaA = "0";
             break;
         // multiplicació
         case "valorMultiplicA":
             resultadoFinal = valorMultiplicA * result;
+            valorMultiplicA = "0";
             break;
         // divisió
         case "valorDivisionA":
             resultadoFinal = valorDivisionA / result;
+            valorDivisionA = "0";
     }
 
     document.getElementById('resultado').innerHTML = resultadoFinal;
