@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Calcu</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/estilsNivell2.css">
+		<link rel="stylesheet" href="estils.css">
 	</head>
 	<body>
-		<main class="bg-secondary carcasa mt-3 p-3">
+		<main class="carcasa mt-3 p-3">
 			<h2>CASIO</h2>
 			<div class="mb-3 ml-1 mr-1 pantallaLCD row">
 				<div id="LCD" class="align-items-center col-12 d-flex justify-content-end ml-auto mr-auto">
@@ -17,31 +17,31 @@
 			</div>
 			<div class="row">
 				<div class="col-12 container d-flex flex-wrap justify-content-around">
-					<div id="un" class="botonCalcu" onclick="teclaUno()">1</div>
-					<div id="dos" class="botonCalcu" onclick="teclaDos()">2</div>
-					<div id="tres" class="botonCalcu"
-					onclick="teclaTres()">3</div>
+					<div id="un" class="botonCalcu" onclick="tecla(event)">1</div>
+					<div id="dos" class="botonCalcu" onclick="tecla(event)">2</div>
+					<div id="tres" class="botonCalcu" onclick="tecla(event)">3</div>
 					<!-- Tecla suma -->
-					<div id="mes" class="botonOp botonCalcu text-white" onclick="teclaMas()">&#43;</div>
-					<div id="quatre" class="botonCalcu" onclick="teclaCuatro()">4</div>
-					<div id="cinq" class="botonCalcu" onclick="teclaCinco()">5</div>
-					<div id="sis" class="botonCalcu" onclick="teclaSeis()">6</div>
+					<div id="mes" class="botonOp botonCalcu text-white" onclick="teclaMas(event)">&#43;</div>
+					<div id="quatre" class="botonCalcu" onclick="tecla(event)">4</div>
+					<div id="cinq" class="botonCalcu" onclick="tecla(event)">5</div>
+					<div id="sis" class="botonCalcu" onclick="tecla(event)">6</div>
 					<!-- Tecla resta -->
-					<div id="menys" class="botonOp botonCalcu text-white" onclick="teclaMenos()">&#8722;</div>
-					<div id="set" class="botonCalcu" onclick="teclaSiete()">7</div>
-					<div id="vuit" class="botonCalcu" onclick="teclaOcho()">8</div>
-					<div id="nou" class="botonCalcu" onclick="teclaNueve()">9</div>
+					<div id="menys" class="botonOp botonCalcu text-white" onclick="teclaMenos(event)">&#8722;</div>
+					<div id="set" class="botonCalcu" onclick="tecla(event)">7</div>
+					<div id="vuit" class="botonCalcu" onclick="tecla(event)">8</div>
+					<div id="nou" class="botonCalcu" onclick="tecla(event)">9</div>
 					<!-- Tecla multip -->
-					<div id="per" class="botonOp botonCalcu text-white" onclick="teclaPor()">&#215;</div>
+					<div id="per" class="botonOp botonCalcu text-white" onclick="teclaPor(event)">&#215;</div>
 					<!-- Tecla reset -->
-					<div id="ce" class="botonRojo botonCalcu text-white" onclick="teclaCe()">C</div>
-					<div id="zero" class="botonCalcu" onclick="teclaCero()">0</div>
+					<div id="ce" class="botonRojo botonCalcu text-white" onclick="teclaCe(event)">C</div>
+					<div id="zero" class="botonCalcu" onclick="tecla(event)">0</div>
 					<!-- Tecla igual -->
-					<div id="igual" class="botonResult botonCalcu text-white" onclick="teclaIgual()">&#61;</div>
+					<div id="igual" class="botonResult botonCalcu text-white" onclick="teclaIgual(event)">&#61;</div>
 					<!-- Tecla division -->
-					<div id="entre" class="botonOp botonCalcu text-white" onclick="teclaEntre()">&#247;</div>
+					<div id="entre" class="botonOp botonCalcu text-white" onclick="teclaEntre(event)">&#247;</div>
 				</div>
 			</div>
+			<p class="firma">Desenvolupat per Miq Alarcia. 2021.</p>
 		</main>
 		<script type="application/javascript" src="js/nivell2.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

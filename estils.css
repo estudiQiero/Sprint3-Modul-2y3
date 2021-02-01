@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+.carcasa {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #396d6d;
+  border: 2px solid #305c5c;
+  -webkit-box-shadow: inset 0 2px 0 #60acac;
+          box-shadow: inset 0 2px 0 #60acac;
+  background-blend-mode: overlay;
+  background-size: cover;
+  /* Botones */
+}
+
+.carcasa p {
+  padding: 0;
+  color: #849a4e;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: right;
+  border: 0;
+  text-shadow: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  margin: 0;
+}
+
+.carcasa h2 {
+  color: #162a2a;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 0 1px 0 #82bdbd;
+  margin: .5rem 0 1.5rem 0;
+}
+
+.carcasa .pantallaLCD {
+  height: 60px;
+  background-color: #dfe6ce;
+  border: 1px solid #b3c48a;
+  text-shadow: 0 -1px 0 #f5f7f0;
+  -webkit-box-shadow: inset 0 0 10px #b3c48a;
+          box-shadow: inset 0 0 10px #b3c48a;
+}
+
+.carcasa .pantallaLCD #LCD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.carcasa .firma {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  color: #162a2a;
+}
+
+.carcasa .botonCalcu {
+  width: 23%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  background: #96baad;
+  margin: 3px 1%;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0 solid #87b0a1;
+  -webkit-box-shadow: inset 1px 2px 3px #d4e2dd, inset -1px -2px 3px #5d8d7c, 2px 2px 3px 1px #274c4c;
+          box-shadow: inset 1px 2px 3px #d4e2dd, inset -1px -2px 3px #5d8d7c, 2px 2px 3px 1px #274c4c;
+  color: white;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
+}
+
+.carcasa .botonCalcu:hover {
+  background: #b5cec5;
+}
+
+.carcasa .botonCalcu:active {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.carcasa .botonOp {
+  background-color: #269b9d;
+  border: 0 solid #218788;
+  -webkit-box-shadow: inset 1px 2px 3px #54d3d5, inset -1px -2px 3px #124a4b, 2px 2px 3px 1px #274c4c;
+          box-shadow: inset 1px 2px 3px #54d3d5, inset -1px -2px 3px #124a4b, 2px 2px 3px 1px #274c4c;
+  color: #cff3f3;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
+}
+
+.carcasa .botonOp:hover {
+  background: #30c4c6;
+}
+
+.carcasa .botonOp:active {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.carcasa .botonRojo {
+  background-color: #a54545;
+  border: 0 solid #933d3d;
+  -webkit-box-shadow: inset 1px 2px 3px #cc8484, inset -1px -2px 3px #5d2727, 2px 2px 3px 1px #274c4c;
+          box-shadow: inset 1px 2px 3px #cc8484, inset -1px -2px 3px #5d2727, 2px 2px 3px 1px #274c4c;
+  color: #f9f0f0;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
+}
+
+.carcasa .botonRojo:hover {
+  background: #bd6060;
+}
+
+.carcasa .botonRojo:active {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.carcasa .botonResult {
+  background-color: #f2c71a;
+  border: 0 solid #e5ba0d;
+  -webkit-box-shadow: inset 1px 2px 3px #f7df7b, inset -1px -2px 3px #9d8009, 2px 2px 3px 1px #274c4c;
+          box-shadow: inset 1px 2px 3px #f7df7b, inset -1px -2px 3px #9d8009, 2px 2px 3px 1px #274c4c;
+  color: white;
+  -webkit-box-shadow: offset;
+          box-shadow: offset;
+}
+
+.carcasa .botonResult:hover {
+  background: #f5d34a;
+}
+
+.carcasa .botonResult:active {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
